@@ -15,8 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.aia.op.member.model.MemberRegRequest;
 import com.aia.op.member.service.MemberRegService;
-import com.aia.op.util.AES256Util;
-import com.aia.op.util.Sha256;
+
 
 @Controller
 @RequestMapping("/member/memberReg")

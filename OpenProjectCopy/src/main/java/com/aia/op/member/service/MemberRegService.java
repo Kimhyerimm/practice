@@ -33,7 +33,7 @@ public class MemberRegService {
 
 	//2020.08.11 변경
 	@Autowired
-	private MailSenderService mailService;
+	/* private MailSenderService mailService; */
 
 	public int memberReg(MemberRegRequest regRequest, HttpServletRequest request) {
 
@@ -82,7 +82,7 @@ public class MemberRegService {
 
 			// 메일 발송
 			// 2020.08.11 변경
-			mailService.send(member.getUid(), member.getCode());
+			/* mailService.send(member.getUid(), member.getCode()); */
 
 		} catch (IllegalStateException e) {
 			// TODO Auto-generated catch block

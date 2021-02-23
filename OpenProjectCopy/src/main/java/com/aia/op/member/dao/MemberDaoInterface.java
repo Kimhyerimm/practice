@@ -5,7 +5,7 @@ import java.util.Map;
 
 import com.aia.op.member.model.Member;
 import com.aia.op.member.model.MemberXML;
-import com.aia.op.member.model.MemberXmlList;
+/*import com.aia.op.member.model.MemberXmlList;*/
 
 public interface MemberDaoInterface {
 	
