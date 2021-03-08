@@ -32,7 +32,7 @@ public class MemberRegService {
 	private SqlSessionTemplate sessionTemplate;
 
 	//2020.08.11 º¯°æ
-	@Autowired
+	/* @Autowired */
 	/* private MailSenderService mailService; */
 
 	public int memberReg(MemberRegRequest regRequest, HttpServletRequest request) {
