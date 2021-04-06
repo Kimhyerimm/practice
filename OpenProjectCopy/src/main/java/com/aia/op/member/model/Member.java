@@ -1,3 +1,4 @@
+ 
 package com.aia.op.member.model;
 
 import java.sql.Date;
@@ -8,9 +9,9 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 /*
 	2020.08.11
-	verify ÄÃ·³ Ãß°¡, 	code Ãß°¡
-	verify : ÀÎÁõ ¿©ºÎ ÄÚµå
-	code : ³­¼ö ÄÚµå
+	verify ï¿½Ã·ï¿½ ï¿½ß°ï¿½, 	code ï¿½ß°ï¿½
+	verify : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½
+	code : ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½
 */
 public class Member {
 
@@ -19,9 +20,9 @@ public class Member {
 	private String upw;
 	private String uname;
 	private String uphoto;
-	// ÀÌ¸ÞÀÏ ÀÎÁõÄÚµå
+	// ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½
 	private String code;
-	// ÀÌ¸ÞÀÏ ÀÎÁõ¿©ºÎ È®ÀÎ
+	// ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
 	private char verify;
 	private Date regdate;
 
@@ -33,7 +34,7 @@ public class Member {
 		this.uphoto = uphoto;
 		this.code = code;
 		this.regdate = regdate;
-		// 2020.08.11 Ãß°¡
+		// 2020.08.11 ï¿½ß°ï¿½
 		getRandomSting();
 	}
 
@@ -43,7 +44,7 @@ public class Member {
 	}
 
 	public Member() {
-		// 2020.08.11 Ãß°¡
+		// 2020.08.11 ï¿½ß°ï¿½
 		getRandomSting();
 	}
 
@@ -103,7 +104,7 @@ public class Member {
 		return new java.util.Date(regdate.getTime());
 	}
 
-	// Member -> LoginInfo : ·Î±×ÀÎ Ã³¸®½Ã ÀúÀåÇÒ µ¥ÀÌÅÍ
+	// Member -> LoginInfo : ï¿½Î±ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public LoginInfo toLoginInfo() {
 		return new LoginInfo(uid, uname, uphoto);
 	}
@@ -116,25 +117,25 @@ public class Member {
 	
 	
 
-	// 2020.08.11 Ãß°¡
+	// 2020.08.11 ï¿½ß°ï¿½
 	public char getVerify() {
 		return verify;
 	}	
-	// 2020.08.11 Ãß°¡
+	// 2020.08.11 ï¿½ß°ï¿½
 	public void setVerify(char verify) {
 		this.verify = verify;
 	}
-	// 2020.08.11 Ãß°¡
+	// 2020.08.11 ï¿½ß°ï¿½
 	public String getCode() {
 		return code;
 	}
-	// 2020.08.11 Ãß°¡
+	// 2020.08.11 ï¿½ß°ï¿½
 	public void setCode(String code) {
 		this.code = code;
 	}
 
-	// 2020.08.11 Ãß°¡
-	// ¿µ¹® + ¼ýÀÚ ³­¼ö ¹ß»ý
+	// 2020.08.11 ï¿½ß°ï¿½
+	// ï¿½ï¿½ï¿½ï¿½ + ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½
 	private void getRandomSting() {
 		
 		Random r = new Random(System.nanoTime());
@@ -148,7 +149,7 @@ public class Member {
 			}
 		}
 		
-		System.out.println("³­¼ö ÄÚµå »ý¼º : " + sb) ;
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ : " + sb) ;
 		
 		setCode(sb.toString());
 		
